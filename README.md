@@ -13,7 +13,6 @@ Part 4: Building a regression model to understand the relationship between bike 
 Optionally, exploring the possibility of turning the regression problem into a classification one will be considered.
 
 ## Process
-### (your step 1)
 Part 1: Connecting to CityBikes API
 The structure of the CityBikes API was explored.The code was setup to take user input as city name and return information about
 the selected city. I chose Madrid as the city and all available bike stations, including their latitude, longitude, and the number of available bikes, were retrieved.
@@ -23,21 +22,19 @@ Part 2: Connecting to Foursquare and Yelp APIs
 The DataFrame from part 1 was saved as a csv file and loaded into the DataFrame for analysis on the second part of the task.
 Connections to the Foursquare and Yelp APIs were established.
 
-### (your step 2)
 For each bike station, queries to both APIs were been made to gather information about restaurants, bars, and other chosen POIs.
 Separate dataframes for Yelp and Foursquare results have been created.
 The quality and coverage of data from both APIs have been compared. 
 ## This was the most difficult task for me and took me almost 3 days as I had challenges in unpacking the nested json responses from the APIs.
 
-Part 3: Joining Data (Future Step)
-The data collected in Part 1 (bike station data) will be joined with the data from Part 2 (Yelp and Foursquare results).
-Data visualization techniques will be used to explore the combined dataset.
-An SQLite database will be created to store the collected POI data with careful consideration of the database structure.
+Part 3: Joining Data
+The data collected in Part 1 (bike station data) will was joined with the data from Part 2 (Yelp and Foursquare results).
+Data visualization techniques were used to explore the combined dataset.
+An SQLite database was the created to store the collected POI data with careful consideration of the database structure.
 
 Part 4: Building a Model (Future Step)
-A regression model will be built using Python's statsmodels to analyze the relationship between bike availability and POI characteristics.
-The results of the regression model will be interpreted.
-Optionally, exploration of how to turn the regression problem into a classification problem will be considered.
+A regression model was built using Python's statsmodels to analyze the relationship between bike availability and POI characteristics.
+In summary, my regression analysis did not yield satisfactory results for predicting the number of total bikes based on the variables I considered. It appears that my current model may not be the best fit for this prediction task. Further investigation and potential model refinement may be required to improve my predictive capabilities.
 
 
 ## Results
@@ -50,7 +47,7 @@ On the other hand, the Foursquare API has also been quite valuable in my work. I
 In summary, if you primarily need detailed information about businesses, their ratings, and reviews, the Yelp API may be more suitable for your needs. On the other hand, if you're interested in a broader range of location-based data, including user activity and trends, the Foursquare API can provide valuable insights. Your choice should align with your specific analytical goals and the type of data that best serves your analysis."
 
 ## Challenges 
-My major challenge really was unpacking the nested json responses from the API.
+My major challenge really was unpacking the nested json responses from the APIs to see its contents. Felt like going down a rabbit hole at times but when I got a hang of it, I loved it. Discovered some rare syntaxes along my exploration as well.
 
 ## Future Goals
 Given more time, we would consider the following:
