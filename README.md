@@ -32,7 +32,7 @@ The data collected in Part 1 (bike station data) will was joined with the data f
 Data visualization techniques were used to explore the combined dataset.
 An SQLite database was the created to store the collected POI data with careful consideration of the database structure.
 
-Part 4: Building a Model (Future Step)
+Part 4: Building a Model
 A regression model was built using Python's statsmodels to analyze the relationship between bike availability and POI characteristics.
 In summary, my regression analysis did not yield satisfactory results for predicting the number of total bikes based on the variables I considered. It appears that my current model may not be the best fit for this prediction task. Further investigation and potential model refinement may be required to improve my predictive capabilities.
 
